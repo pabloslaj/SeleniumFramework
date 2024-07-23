@@ -1,0 +1,13 @@
+package com.leniolabs.enums;
+
+public enum ConfigProperties {
+    URL,
+    OVERRIDEREPORTS,
+    PASSEDSTEPSSCREENSHOTS,
+    FAILEDSTEPSSCREENSHOTS,
+    SKIPPEDSTEPSSCREENSHOTS,
+    RETRYFAILEDTESTS,
+    BROWSER,
+    RUNMODE,
+    SELENIUMGRIDURL
+}
