@@ -2,14 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" data-provider-thread-count="1" parallel="methods" thread-count="4" >
     <listeners>
-        <listener class-name="com.leniolabs.listeners.TestListener"></listener>
-        <listener class-name="com.leniolabs.listeners.MethodInterceptor"></listener>
-        <listener class-name="com.leniolabs.listeners.AnnotationTransformer"></listener>
+        <listener class-name="com.pls.listeners.TestListener"></listener>
+        <listener class-name="com.pls.listeners.MethodInterceptor"></listener>
+        <listener class-name="com.pls.listeners.AnnotationTransformer"></listener>
     </listeners>
 
     <test name="test">
         <classes>
-            <class name="com.leniolabs.testcases.DemoTest"/>
+            <class name="com.pls.testcases.LoginTests"/>
         </classes>
     </test>
 </suite>

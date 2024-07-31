@@ -1,1 +1,1 @@
-# Lenio Labs Selenium Framework
+# Selenium Automation Framework
