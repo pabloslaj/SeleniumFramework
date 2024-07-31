@@ -2,6 +2,7 @@ package com.pls.driver.factory;
 
 import com.pls.driver.IWebDriver;
 import com.pls.driver.LocalWebDriverImpl;
+import com.pls.driver.RemoteWebDriverImpl;
 import com.pls.enums.RunMode;
 
 import java.util.EnumMap;
@@ -17,6 +18,7 @@ public final class DriverFactory {
 
     static {
         WEB.put(RunMode.LOCAL, LocalWebDriverImpl::new);
+        WEB.put(RunMode.REMOTE, RemoteWebDriverImpl::new);
     }
 
     public static IWebDriver getDriver(RunMode runModeType) {

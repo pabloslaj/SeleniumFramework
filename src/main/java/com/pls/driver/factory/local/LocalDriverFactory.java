@@ -28,7 +28,7 @@ public final class LocalDriverFactory {
                 webDriver = SafariManager.getDriver();
                 break;
             default:
-                throw new IllegalArgumentException("Tipo de navegador no soportado: " + browserType);
+                throw new IllegalArgumentException("Browser not supported: " + browserType);
         }
         return webDriver;
     }
